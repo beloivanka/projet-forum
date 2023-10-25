@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="register.js" defer></script>
+    <title>S'enregistrer</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-container">
+        <a href="index.html"><img id="logo" src="img/logo.png" alt="" /></a>
+        <div>
+          <p class="logo-text">Parler</p>
+          <p class="logo-text">musique</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="form-wrapper">
+      <div class="form-container">
+        <h2>S'enregistrer</h2>
+        <form id="form" action="login.html">
+          <label for="firstName">Prénom</label>
+          <input id="firstName" type="text" minlength="3" />
+          <span id="firstNameError">Champ obligatoire</span>
+          <span id="firstNameMinLengthError">3 lettres minimum requises</span>
+
+          <label for="lastName">Nom de famille</label>
+          <input id="lastName" type="text" minlength="3" />
+          <span id="lastNameError">Champ obligatoire</span>
+          <span id="lastNameMinLenthError">3 lettres minimum requises</span>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+          <span id="emailError">Champ obligatoire</span>
+
+          <label for="password">Mot de passe</label>
+          <input id="password" type="password" />
+          <span id="passwordError">Champ obligatoire</span>
+          <span id="passwordErrorStyle"
+            >Le mot de passe doit contenir au moins 8 caractères dont une lettre majuscule, une
+            lettre minuscule, un chiffre et un caractère spécial</span
+          >
+
+          <label for="confirmPassword">Confirmation mot de passe</label>
+          <input id="confirmPassword" type="password" />
+          <span id="confirmPasswordError">Champ obligatoire</span>
+          <span id="confirmPasswordErrorSameText"
+            >Le mot de passe ne correspond pas</span
+          >
+
+          <button class="btn-validate" id="validate-form-button" type="submit">VALIDER</button>
+        </form>
+      </div>
+      <img id="img2" src="img/img2.png" alt="">
+      <img id="img2-mobile" src="img/img2-mobile.png" alt="">
+    </section>
+  </body>
+</html>
