@@ -18,18 +18,26 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="forum2.js" defer></script>
     <title>Apprendre à jouer</title>
 </head>
 <body>
-    <header>
-        <div id="header-container">
-          <a href="index.html"><img id="logo" src="img/logo.png" alt="" /></a>
-          <div>
-            <p class="logo-text">Parler</p>
-            <p class="logo-text">musique</p>
-          </div>
-        </div>
-      </header>
+  <header>
+    <div id="header">
+    <div id="header-container">
+      <a href="index.html"><img id="logo" src="img/logo.png" alt="" /></a>
+      <div>
+        <p class="logo-text">Parler</p>
+        <p class="logo-text">musique</p>
+      </div>
+    </div>
+    <div id="link-container">
+    <a href="forum.html" class="logo-text logo-text-link">Forum</a>
+    <a href="register.html" class="logo-text logo-text-link">S'enregistrer</a>
+    <a href="login.html" class="logo-text logo-text-link">Connection</a>
+  </div>
+  </div>
+  </header>
 
       <section id="img5-wrapper">
         <div>
@@ -37,7 +45,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="table-container">
         <table>
           <thead>
             <tr>
@@ -47,14 +55,20 @@
               <th>Auteur</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Partitions valses</td>
-              <td><span></span><span></span><span></span></td>
-            </tr>
+          <tbody id="div-parent">
+            <!-- <tr id="div1">
+
+            </tr> -->
           </tbody>
         </table>
+      </section>
+
+      <section id="ajout-container">
+        <h5>Titre du sujet</h5>
+        <input id="sujetInput" class="ajout-input" type="text">
+        <div id="btn-ajout-container">
+        <button id="btnAjouter" class="btn ajout-btn">Ajouter</button>
+      </div>
       </section>
     
 </body>
