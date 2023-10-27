@@ -285,6 +285,7 @@ line-height: 38px;
 
 table, tr, td, th {
     border: 1px solid #E9E9E9;
+    background: rgba(255, 255, 255, 0.5);
 }
 .table-container, .ajout-container{
     margin: 4%;
@@ -318,9 +319,15 @@ h5{
 }
 
 .ajout-input{
-    background-color: #E9E9E9;
+    background: rgba(255, 255, 255, 0.5);
     font-size: 20px;
     padding: 6px;
+    border: 1px solid white;
+}
+
+.ajout-input:focus{
+    outline: 1px solid #1E282A;;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.30);
 }
 
 #btn-ajout-container{
@@ -337,6 +344,7 @@ h5{
 
 #message{
     margin: 2% 0;
+    border-radius: 12px;
 }
 
 #message-field {
@@ -397,6 +405,25 @@ h5{
     flex-direction: column;
     justify-content: stretch;
 
+}
+
+#background{
+    background-image: url(img/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin-top:20px;
+}
+
+#errorMessage{
+    color: red;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#errorMessageAjout{
+    color: red;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 600px) {
@@ -470,6 +497,12 @@ h5{
     #table-container{
         margin: 4% 4% 8% 4%;
     }
+
+    .btn-voir{
+        padding: 6px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
 }
 
 
@@ -482,6 +515,10 @@ h5{
     }
     h1{
         font-size: 50px;
+    }
+
+    h4{
+        line-height: 52px;
     }
     #cards-container{
         padding: 4% 4% 12% 4%;
