@@ -53,6 +53,7 @@ function checkIfEmailIsValid(){
         return false;
     }
 }
+console.log(email.value);
 
 function checkIfPasswordIsValid(){
     if(password.value = testPassword.value){
