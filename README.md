@@ -1,7 +1,7 @@
 # ** Summary **
 
-- ## [Introduction](https://github.com/beloivanka/projet-forum.git "Introduction") 
-- ## [Design](https://github.com/beloivanka/projet-forum.git "Design") 
+- ## [Introduction](https://github.com/beloivanka/projet-forum.git#introduction- "Introduction") 
+- ## [Design](https://github.com/beloivanka/projet-forum.git#design- "Design") 
 - ## [Description](https://github.com/beloivanka/projet-forum.git "Description") 
 - ## [Languages](https://github.com/beloivanka/projet-forum.git "Languages") 
 - ## [Features](https://github.com/beloivanka/projet-forum.git "Features") 
