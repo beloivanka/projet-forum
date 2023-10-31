@@ -1,12 +1,12 @@
 # ** Summary **
 
-- ## [Introduction](https://github.com/beloivanka/projet-forum.git "Introduction") 
-- ## [Design](https://github.com/beloivanka/projet-forum.git "Design") 
-- ## [Description](https://github.com/beloivanka/projet-forum.git "Description") 
-- ## [Languages](https://github.com/beloivanka/projet-forum.git "Languages") 
-- ## [Features](https://github.com/beloivanka/projet-forum.git "Features") 
-- ## [Download the Project](https://github.com/beloivanka/projet-forum.git "Download the Project") 
-- ## [How to Use the Project](https://github.com/beloivanka/projet-forum.git "How to Use the Project") 
+- ## [Introduction](https://github.com/beloivanka/projet-forum#introduction-1 "Introduction") 
+- ## [Design](https://github.com/beloivanka/projet-forum#design-1 "Design") 
+- ## [Description](https://github.com/beloivanka/projet-forum#description-1 "Description") 
+- ## [Languages](https://github.com/beloivanka/projet-forum#languages-1 "Languages") 
+- ## [Features](https://github.com/beloivanka/projet-forum#features-1 "Features") 
+- ## [Download the Project](https://github.com/beloivanka/projet-forum#download-the-project-1 "Download the Project") 
+- ## [How to Use the Project](https://github.com/beloivanka/projet-forum#how-to-use-the-project-1 "How to Use the Project") 
 
 ## Introduction 
 
