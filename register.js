@@ -1,5 +1,7 @@
 let validateButton = document.getElementById("form");
 let firstName = document.getElementById("firstName");
+let regexExpressionName = /^[a-zA-Z]+$/;
+let nameRegex = new RegExp(regexExpressionName);
 let lastName = document.getElementById("lastName");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
@@ -15,7 +17,7 @@ let firstNameMinLengthError = document.getElementById("firstNameMinLengthError")
 let lastNameMinLenthError = document.getElementById("lastNameMinLenthError");
 let regexExpressionFormEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 let emailRegex = new RegExp(regexExpressionFormEmail);
-let regexExpressionForPassword = /^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[#^+-[]])[A-Za-z\d#^+-[]]{8,}$/;
+let regexExpressionForPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#^+\-\[\]])[A-Za-z\d#^+\-\[\]]{8,}$/;
 let passwordRegex = new RegExp(regexExpressionForPassword);
 
 
@@ -48,33 +50,22 @@ function validateForm(e){
 }
 
 function checkIfFirstNameIsValid(){
-    if(firstName.value != "" && firstName.value.length > 3){
+    if(firstName.value.match(nameRegex) && firstName.value != "" && firstName.value.length > 3){
         return true;
-    }
-    
-    if(firstName.value.length < 3){
-        firstNameMinLengthError.style.display = "block";
-        firstName.style.borderColor = "red";
-        return false;
-    }
-    if(firstName.value == ""){
+    }else {
         firstNameError.style.display = "block";
+        firstNameMinLengthError.style.display = "block";
         firstName.style.borderColor = "red";
         return false;
     }
 }
 
 function checkIfLastNameIsValid(){
-    if(lastName.value != "" && lastName.value.length > 3){
+    if(lastName.value.match(nameRegex) && lastName.value != "" && lastName.value.length > 3){
         return true;
-    }
-    if(lastName.value.length < 3){
-        lastNameMinLenthError.style.display = "block";
-        lastName.style.borderColor = "red";
-        return false;
-    }
-    if(lastName.value == ""){
+    }else{
         lastNameError.style.display = "block";
+        lastNameMinLenthError.style.display = "block";
         lastName.style.borderColor = "red";
         return false;
     }
