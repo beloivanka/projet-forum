@@ -52,9 +52,19 @@ function validateForm(e){
 function checkIfFirstNameIsValid(){
     if(firstName.value.match(nameRegex) && firstName.value != "" && firstName.value.length > 3){
         return true;
-    }else {
-        firstNameError.style.display = "block";
+    }
+    if(!firstName.value.match(nameRegex)){
         firstNameMinLengthError.style.display = "block";
+        firstName.style.borderColor = "red";
+        return false;
+    }
+    if(firstName.value.length < 3){
+        firstNameMinLengthError.style.display = "block";
+        firstName.style.borderColor = "red";
+        return false;
+    }
+    if(firstName.value == ""){
+        firstNameError.style.display = "block";
         firstName.style.borderColor = "red";
         return false;
     }
@@ -63,9 +73,19 @@ function checkIfFirstNameIsValid(){
 function checkIfLastNameIsValid(){
     if(lastName.value.match(nameRegex) && lastName.value != "" && lastName.value.length > 3){
         return true;
-    }else{
-        lastNameError.style.display = "block";
+    }
+    if(!lastName.value.match(nameRegex)){
         lastNameMinLenthError.style.display = "block";
+        lastName.style.borderColor = "red";
+        return false;
+    }
+    if(lastName.value.length < 3){
+        lastNameMinLenthError.style.display = "block";
+        lastName.style.borderColor = "red";
+        return false;
+    }
+    if(lastName.value == ""){
+        lastNameError.style.display = "block";
         lastName.style.borderColor = "red";
         return false;
     }
