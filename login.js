@@ -2,14 +2,14 @@
 let user = localStorage.getItem("data user");
 
 let objetUser = JSON.parse(user);
-const testMail = document.getElementById("email");
-testMail.value = objetUser["nom"];
-const testPassword = document.getElementById("password");
-testPassword.value = objetUser["mdp"];
+const email = document.getElementById("email");
+email.value = objetUser["nom"];
+const password = document.getElementById("password");
+password.value = objetUser["mdp"];
 
 
-let email = document.getElementById("email");
-let password = document.getElementById("password");
+// let email = document.getElementById("email");
+// let password = document.getElementById("password");
 let emailError = document.getElementById("emailError");
 let passwordError = document.getElementById("passwordError");
 let btn = document.getElementById("form");
@@ -45,22 +45,22 @@ function validateForm(e){
 
 
 function checkIfEmailIsValid(){
-    if(email.value = testMail.value){
-        return true;
-    } else{
+    if(email.value != objetUser["nom"] || email.value == ""){   
+        console.log("toto") 
         emailError.style.display = "block";
         email.style.borderColor = "red";
         return false;
+    } else{
+        return true;
     }
 }
-console.log(email.value);
 
 function checkIfPasswordIsValid(){
-    if(password.value = testPassword.value){
-        return true;
-    } else {
+    if(password.value != objetUser["mdp"] || password.value == ""){
         passwordError.style.display = "block";
         password.style.borderColor = "red";
         return false;
+    } else {
+        return true;
     }
 }

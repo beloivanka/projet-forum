@@ -163,10 +163,10 @@ line-height: normal;
 .btn-validate{
     border: none;
     border-radius: 8px;
-background: rgba(30, 40, 42, 0.65);
-color: white;
-padding: 4px 0;
-margin-top: 20px;
+    background: rgba(30, 40, 42, 0.65);
+    color: white;
+    padding: 4px 0;
+    margin-top: 20px;
 }
 .btn-validate:hover, .voir-btn:hover{
     background: #1E282A;
@@ -221,10 +221,10 @@ line-height: 38px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-font-style: normal;
-font-weight: 200;
-line-height: 38px;
-padding: 2% 2% 4% 2%;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 38px;
+    padding: 2% 2% 4% 2%;
 }
 
 .connect-text{
@@ -233,8 +233,8 @@ padding: 2% 2% 4% 2%;
 
 .voir-btn{
     border-radius: 12px;
-background: rgba(30, 40, 42, 0.65);
-padding: 8px 12px;
+    background: rgba(30, 40, 42, 0.65);
+    padding: 8px 12px;
 }
 
 .voir-btn-container{
@@ -274,9 +274,9 @@ padding: 8px 12px;
 
 h4{
     font-size: 55px;
-font-style: normal;
-font-weight: 500;
-line-height: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
     text-align: center;
     border-radius: 26px;
     background: rgba(255, 255, 255, 0.62);
@@ -286,6 +286,10 @@ line-height: 38px;
 table, tr, td, th {
     border: 1px solid #E9E9E9;
     background: rgba(255, 255, 255, 0.5);
+}
+
+.break{
+    word-break: break-all;
 }
 .table-container, .ajout-container{
     margin: 4%;

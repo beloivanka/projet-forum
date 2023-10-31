@@ -15,7 +15,7 @@ let firstNameMinLengthError = document.getElementById("firstNameMinLengthError")
 let lastNameMinLenthError = document.getElementById("lastNameMinLenthError");
 let regexExpressionFormEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 let emailRegex = new RegExp(regexExpressionFormEmail);
-let regexExpressionForPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+let regexExpressionForPassword = /^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[#^+-[]])[A-Za-z\d#^+-[]]{8,}$/;
 let passwordRegex = new RegExp(regexExpressionForPassword);
 
 

@@ -1,6 +1,3 @@
-// let user = localStorage.getItem("data user");
-// let objetUser = JSON.parse(user);
-
 const date = new Date();
 const myDate = {
     day: date.getDate(),
@@ -33,6 +30,8 @@ let inputMessage = document.getElementById("message");
 let errorMessage = document.getElementById("errorMessage");
 let errorMessageAjout = document.getElementById("errorMessageAjout");
 
+let dateCo;
+let timeCo;
 
 btnAjouter.addEventListener("click", ajouter);
 
@@ -42,26 +41,27 @@ function ajouter(e){
         errorMessageAjout.classList.add("block");
         input.style.borderColor = "red";
     }else {
-
         const date = new Date();
 
-        let dateCo = date.toLocaleDateString();
-        let timeCo = date.toLocaleTimeString();
+        dateCo = date.toLocaleDateString();
+        timeCo = date.toLocaleTimeString();
         
         let div1 = document.createElement("tr");
         div1.id = "div1";
         document.getElementById("div-parent").appendChild(div1);
     
         let numberDiv = document.createElement("td");
-        numberDiv.innerHTML = i++;
+        numberDiv.innerHTML = i;
         div1.appendChild(numberDiv);
         
         let sujetDiv = document.createElement("td");
         sujetDiv.innerHTML = input.value;
+        sujetDiv.className = "break";
         div1.appendChild(sujetDiv);
         
         let dateDiv = document.createElement("td");
-        dateDiv.innerHTML = dateCo + " à " + timeCo;
+        let fullDate = dateCo + " à " + timeCo;
+        dateDiv.innerHTML = fullDate;
         div1.appendChild(dateDiv);
         
         let nomDiv = document.createElement("td");
@@ -72,24 +72,41 @@ function ajouter(e){
         btnDiv.className = "btn-voir";
         btnDiv.innerHTML = "Voir";
         div1.appendChild(btnDiv);
+        // btnDiv.href = "test.html?"+i;
+
+
+        let myForum = {
+            id: i,
+            nom: input.value,
+            date: fullDate,
+            author: objetUser["identifiant"]
+        }
+
+        incrementId();
+
+        input.value = "";
     
         btnDiv.addEventListener("click", voirClick);
-    
-        function voirClick (){
+
+        function voirClick(){
             messageSection.classList.add("block-message");
             sujetSection.classList.add("block-stretch");
             ajoutSection.classList.add("none");
             tableauSection.classList.add("none");
         
-            sujet.innerHTML = input.value;
-            comment.innerHTML = dateCo + " à " + timeCo;
-            auteur.innerHTML = objetUser["identifiant"];
+            sujet.innerHTML = myForum.nom;
+            sujet.className = "break";
+            comment.innerHTML = myForum.date;
+            auteur.innerHTML = myForum.author;
         
         }
     }
 
 }
 
+function incrementId(){
+    i++;
+}
 
 btnMessage.addEventListener("click", sendMessage);
 
@@ -112,10 +129,13 @@ function sendMessage (e) {
     
         let sujet2Div = document.createElement("td");
         sujet2Div.innerHTML = inputMessage.value;
+        sujet2Div.className = "break";
         div2.appendChild(sujet2Div);
     
         let nom2Div = document.createElement("td");
         nom2Div.innerHTML = objetUser["identifiant"]+ " le " + dateCo + " à " + timeCo;
         div2.appendChild(nom2Div);
+
+        inputMessage.value = "";
     }
 }
