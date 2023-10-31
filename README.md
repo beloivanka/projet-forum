@@ -48,7 +48,7 @@ This site will allow you to find different functionalities created using JavaScr
 
 ## Download the Project
 
-To retrieve the project you can go to your computer's terminal and use the following command: 
+To download the project you can go to your computer's terminal and use the following command: 
 
 git clone https://github.com/beloivanka/projet-forum.git
 
