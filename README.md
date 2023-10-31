@@ -1,7 +1,7 @@
 # ** Summary **
 
-- ## [Introduction](https://github.com/beloivanka/projet-forum.git#introduction- "Introduction") 
-- ## [Design](https://github.com/beloivanka/projet-forum.git#design- "Design") 
+- ## [Introduction](https://github.com/beloivanka/projet-forum.git "Introduction") 
+- ## [Design](https://github.com/beloivanka/projet-forum.git "Design") 
 - ## [Description](https://github.com/beloivanka/projet-forum.git "Description") 
 - ## [Languages](https://github.com/beloivanka/projet-forum.git "Languages") 
 - ## [Features](https://github.com/beloivanka/projet-forum.git "Features") 
@@ -35,6 +35,16 @@ To create this project, we used the following languages:
 [JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
 
 ## Features
+
+This site will allow you to find different functionalities created using JavaScript:
+
+- Registration form with verification of fields and password with instructions that appear in case of an error
+- Connection form with fields pre-filled with information taken from the registration form
+- Welcome message which includes the data you provided for registration as well as the time and date you connected
+- Different on-click events to make new elements appear as a discussion topic or a new message on the same page
+- Creation of discussion topics on the forum
+- Re-using of stored data to create new subjects and messages
+- Possibility of responding to topics that already exist
 
 ## Download the Project
 
